@@ -1,15 +1,19 @@
-include "main.h"
+/*
+ * File: 1-alphabet.c
+ * Auth: Purity Chepkorir
+ */
+
+#include "main.h"
+
 /**
-*print_alphabet - function that print alphabet
-*it prints in lowercase
-*Return: no return
-*/
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ */
 void print_alphabet(void)
 {
-int letter;
-for (letter = 'a'; letter <= 'z'; letter++)
-{
-_putchar (letter);
-}
-_putchar (10);
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
+	_putchar('\n');
 }
